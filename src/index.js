@@ -14,8 +14,7 @@
 //;
 //- As a user, the task string that I provided should appear on the DOM after the submit button has been activated.
 
- newTaskForm.addEventListener("submit", createNewTask);
-});
+
 document.addEventListener("DOMContentLoaded", () => {
   //grab all the necessary DOM elements
 
