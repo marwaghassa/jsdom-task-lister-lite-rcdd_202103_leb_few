@@ -13,10 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
 //;
 //- As a user, the task string that I provided should appear on the DOM after the submit button has been activated.
 
-submit.addEventListener("click",function(e){
-  e.preventDefault();
- let newTask = document.createElement("li");
-  newTask.innerText = newTaskDescription.value;
-newTaskUl.appendchild("li");
-  
+ newTaskForm.addEventListener("submit", createNewTask);
 });
+
+const createNewTask = event => {
+  event.preventDefault();
+  //stop form from trying to submit
+  const newTaskDescription = document.getElementById("new-task-description");
+  const newTask = document.createElement("li");
+  newTask.innerText = newTaskDescription.value;
+
+  appendNewTask(newTask);
+  event.target.reset();
+};
+
+const appendNewTask = task => {
+  document.getElementById("tasks").appendChild(task);
+};
