@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-  let newTaskForm = document.getElementById("create-task-form");
+  /*let newTaskForm = document.getElementById("create-task-form");
   let newTaskDescription = document.getElementById("new-task-description");
   let submit=document.getElementByTagName('input')[1]; 
   
-  const newTaskUl = document.getElementById("tasks");
+  const newTaskUl = document.getElementById("tasks");*/
+  
  //- As a user, I should be able to type a task into the input field.
  
  
